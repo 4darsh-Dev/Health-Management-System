@@ -62,7 +62,7 @@ class Log(User):
         else:
             print("Invalid Input! ")
     
-    def retriveDietFunc(self, userName):
+    def retrieveDietFunc(self, userName):
         # takes the username and then gives the diet log details of the desired user 
 
         if userName == self.user1:
@@ -104,7 +104,7 @@ if __name__ == "__main__":
     welcomeMsg = '''\n========Welcome to the Health Management System (HMS)========
 What you want to do?
   1. Log/Record Data
-  2. Retrive Data
+  2. Retreive Data
   3. Exit'''
     while(True):
         print(welcomeMsg)
@@ -208,11 +208,11 @@ What you want to do?
                 userLog = int(input("\nChoose log option : "))
                 if userLog == 1:
                     # you've chose diet log
-                    myLog.retriveDietFunc("Rohan")
+                    myLog.retrieveDietFunc("Rohan")
 
                 elif userLog == 2:
                     # you've chose excercise log
-                    myLog.retriveExerciseFunc("Rohan")
+                    myLog.retrieveExerciseFunc("Rohan")
 
                 elif userLog == 3:
                     exit()
@@ -230,11 +230,11 @@ What you want to do?
                 userLog = int(input("\nChoose log option : "))
                 if userLog == 1:
                     # you've chose diet log
-                    myLog.retriveDietFunc("Shreya")
+                    myLog.retrieveDietFunc("Shreya")
                         
                 elif userLog == 2:
                     # you've chose excercise log
-                    myLog.retriveExerciseFunc("Shreya")
+                    myLog.retrieveExerciseFunc("Shreya")
                 
                 elif userLog == 3:
                     exit()
@@ -252,11 +252,11 @@ What you want to do?
                 userLog = int(input("\nChoose log option : "))
                 if userLog == 1:
                     # you've chose diet log
-                    myLog.retriveDietFunc("Danerys")
+                    myLog.retrieveDietFunc("Danerys")
                         
                 elif userLog == 2:
                     # you've chose excercise log
-                    myLog.retriveExerciseFunc("Danerys")
+                    myLog.retrieveExerciseFunc("Danerys")
                 
                 elif userLog == 3:
                     exit()
